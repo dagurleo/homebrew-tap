@@ -1,6 +1,6 @@
 cask "markview" do
-  version "0.1.0"
-  sha256 "18ba91e6bbb5302b894d212fdc4c155307bad8f5533f66c55eb634e2241ee3bc"
+  version "0.1.1"
+  sha256 "05a02e1638ce35fa561a7d753bd374a248e9f2f4269f94458502fec08fe1ff5e"
 
   url "https://github.com/dagurleo/markview/releases/download/v#{version}/Markview-#{version}.zip"
   name "Markview"
@@ -12,6 +12,7 @@ cask "markview" do
     strategy :github_latest
   end
 
+  auto_updates true
   depends_on macos: :sonoma
 
   app "Markview.app"
