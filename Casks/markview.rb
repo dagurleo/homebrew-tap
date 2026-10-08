@@ -16,6 +16,7 @@ cask "markview" do
   depends_on macos: :sonoma
 
   app "Markview.app"
+  binary "#{appdir}/Markview.app/Contents/Resources/markview"
 
   zap trash: [
     "~/Library/Application Scripts/com.dagurleo.markview.quicklook",
@@ -24,6 +25,5 @@ cask "markview" do
     "~/Library/HTTPStorages/com.dagurleo.markview",
     "~/Library/Preferences/com.dagurleo.markview.plist",
     "~/Library/Saved Application State/com.dagurleo.markview.savedState",
-    "~/Library/WebKit/com.dagurleo.markview",
   ]
 end
