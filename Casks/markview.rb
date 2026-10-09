@@ -1,10 +1,10 @@
 cask "markview" do
-  version "0.4.0"
-  sha256 "e95d24079266c662fafd41e294db51d56290b4ecd3e8b0509701c84b97621d0f"
+  version "0.5.0"
+  sha256 "b966dda3b34336fe6d940b66504da19b9d65bd02922d335e6244ec4c7e71fe86"
 
   url "https://github.com/dagurleo/markview/releases/download/v#{version}/Markview-#{version}.zip"
   name "Markview"
-  desc "Native Markdown viewer with Quick Look previews"
+  desc "Native Markdown viewer and editor with Quick Look previews"
   homepage "https://github.com/dagurleo/markview"
 
   livecheck do
