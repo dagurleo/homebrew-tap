@@ -11,28 +11,29 @@ class T3agent37 < Formula
   # One build for both chips on macOS.
   on_macos do
     on_arm do
-      url "https://github.com/dagurleo/t3agent37/releases/download/v0.1.9/t3agent37-macos.tar.gz"
-      sha256 "07eab830051b0f52d2ebbb4e6bb9ed15a662ce07684d44a1aec161e35e8cd3f7"
+      url "https://github.com/dagurleo/t3agent37/releases/download/v0.1.10/t3agent37-macos.tar.gz"
+      sha256 "84036d03007687484e51edbceb51cc97f4ba91b6b22067e4dde0f501782bccd4"
     end
     on_intel do
-      url "https://github.com/dagurleo/t3agent37/releases/download/v0.1.9/t3agent37-macos.tar.gz"
-      sha256 "07eab830051b0f52d2ebbb4e6bb9ed15a662ce07684d44a1aec161e35e8cd3f7"
+      url "https://github.com/dagurleo/t3agent37/releases/download/v0.1.10/t3agent37-macos.tar.gz"
+      sha256 "84036d03007687484e51edbceb51cc97f4ba91b6b22067e4dde0f501782bccd4"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dagurleo/t3agent37/releases/download/v0.1.9/t3agent37-linux-x86_64.tar.gz"
-      sha256 "f893f8c24be7a537ae78b3e06f892178f5fc0c05b1852976ef88e67286df2ec8"
+      url "https://github.com/dagurleo/t3agent37/releases/download/v0.1.10/t3agent37-linux-x86_64.tar.gz"
+      sha256 "c9b14a79c180ccafc4e280d98bcab0b30ff4e1f08e0b1a643b16b021f2d25b64"
     end
     on_arm do
-      url "https://github.com/dagurleo/t3agent37/releases/download/v0.1.9/t3agent37-linux-arm64.tar.gz"
-      sha256 "6d619ff3e35079b3e1a39dccd1c043d7c6a520dcca388fb8c5a75266f708c1cf"
+      url "https://github.com/dagurleo/t3agent37/releases/download/v0.1.10/t3agent37-linux-arm64.tar.gz"
+      sha256 "7b32816bd546c58c97db2a1abea34fb0490c6413319391f5030165ec77ad1eb1"
     end
   end
 
   def install
     bin.install "t3agent37"
+    generate_completions_from_executable(bin/"t3agent37", "completions")
   end
 
   def caveats
