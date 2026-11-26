@@ -1,6 +1,6 @@
 cask "t3agent37" do
-  version "0.1.11"
-  sha256 "119ce0452fa95129a94d31530eb884f4726ae61e45325da5baabf6b8eda8562b"
+  version "0.1.12"
+  sha256 "8b1eb3887ccd2c79465678650c21f59e1fd190cbf26e8eb2f03203dd603b68ef"
 
   url "https://github.com/dagurleo/t3agent37/releases/download/v#{version}/t3agent37.dmg"
   name "t3agent37"
